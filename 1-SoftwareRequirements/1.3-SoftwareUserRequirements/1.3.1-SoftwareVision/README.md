@@ -1,0 +1,3 @@
+### Бачення програмного продукту
+
+**FOR** full-aged citizens with average income **WHO** has needs for environmental lighting to realize interest in literary prose, and respect for others for psychological and emotional stability **THE** Lets Read! **IS** multi-platform software product **THAT** allows users to read literary prose online or offline with integrations to IoT lighting system and hardware notification system **UNLIKE** other services or package software products **OUR** product provides very capable services at a moderate cost.

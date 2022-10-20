@@ -1,0 +1,13 @@
+@startuml
+
+title Cpncept Classes Diagram 
+
+Class User
+Class Role
+Class Literature
+
+User"1" -- "+"Role: is >
+User"+" *--* "+"Literature : has
+Literature"1" -- "+"User: author is
+
+@enduml

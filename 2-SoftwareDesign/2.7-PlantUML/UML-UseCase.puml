@@ -1,0 +1,28 @@
+@startuml
+
+title Usecase for Information system
+
+' left to right direction
+
+actor Користувач
+actor Читач
+actor :Сервіс Е-Pay:
+
+Читач -|> Користувач 
+
+rectangle Software {
+
+    usecase (E-сплата)
+    usecase (Авторизувати користувача)
+    usecase (Придбати платну підписку)
+    
+    (Придбати платну підписку) .> (Авторизувати користувача) : include
+    (E-сплата) .> (Придбати платну підписку) : extends
+
+    Користувач -- (Авторизувати користувача)
+    Читач -- (Придбати платну підписку)
+    :Сервіс Е-Pay: -- (E-сплата)
+
+}
+
+@enduml

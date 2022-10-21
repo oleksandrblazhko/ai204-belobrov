@@ -1,0 +1,22 @@
+@startuml
+
+title Activity Diagram of Literature.publish() method
+
+start
+
+:The program finds certain literature in the system; 
+note right: Using LiteratureDAO repository
+
+if (Was Literature Found?) then (yes)
+    if (Was Found Literature Applied By Administrator?) then (yes)
+      :Publishing the literature!;
+    else (no)
+      :Your literature was not applied by administrator!;
+    endif
+else (no)
+  :Requested literature was not found!;
+endif
+
+stop
+
+@enduml

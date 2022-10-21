@@ -1,0 +1,44 @@
+@startuml
+
+title Example of Relation Schema
+
+hide circle
+
+entity "Role" as tr {
+    (PK) role_id
+    --
+    name
+}
+
+entity "User" as tu {
+    (PK) user_id
+    --
+    (FK) role_id
+    name
+    surname
+    balance
+}
+
+entity "Users_Literature" as tul {
+    (PK, FK) user_id
+    (PK, FK) literature_id
+    --
+    obtainedDate
+}
+
+entity "Literature" as tl {
+    (PK) literature_id
+    --
+    (FK) author_id
+    name
+    description
+    type
+    cost
+}
+
+tr --{ tu
+tu --{ tul
+tu --{ tl
+tl --{ tul
+
+@enduml
